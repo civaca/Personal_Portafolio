@@ -1,0 +1,148 @@
+body{
+    font-size: 100%;
+    font-family: "Open Sans";
+    scroll-behavior: smooth;
+    
+}
+#navbar{
+    background-color: #19647E;
+    position: fixed;
+    top: 0cm;
+    left: 0cm;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-end; 
+    z-index: 1;
+}
+.linkbar{
+    margin: 0em 1em 0em 1em;
+    color: white;
+    padding:0.5em; 
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+#welcome-section{
+    margin:2em 0em 0em 0em;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F1ED;
+
+   
+}
+#main-image{
+     width: 100%;
+     max-height:85%;
+     margin: 2em;
+
+}
+.icons{
+    height:auto;
+    width:30em;
+    max-width: 100%;
+    margin: 0cm;
+    
+
+}
+.icon-social{
+    width:10em;
+
+}
+#projects{
+    background-color: #F5F1ED;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   
+}
+#proj{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    width: 90vw;
+    justify-content: center;
+    
+    
+}
+.prolink{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 1em;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    background-color: #19647E;
+    
+    
+}
+.linkpro{
+    padding: 0.1em 0em 0.1em 0em;
+    font-size: 1.1em;
+}
+
+
+#icon-info{
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+footer{
+    text-align: right;
+    background-color: #F5F1ED;
+    padding: 0.6em;
+    bottom: 0em;
+}
+#contact_info{
+    background-color: #F5F1ED;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20em;
+}
+
+a:hover{
+    animation-name: backcolor;
+    animation-duration:500ms;
+    animation-fill-mode: forwards;
+    
+}
+
+.prolink:hover{
+    animation-name:grow
+}
+
+@keyframes backcolor{
+    100%{
+        background-color:#72A98F ;
+    }
+}
+
+@keyframes grow{
+    100%{
+        transform: scale(1.03);
+        background-color:#72A98F ;
+
+    }
+}
+@media (min-width:720px){
+    body{
+        font-size: 110%;
+    }
+    #main-image{
+        width: 55%;
+    }
+    #about-me{
+        margin-top: 3em;
+    }
+    .icons{
+        width: 25em;
+    }
+}
